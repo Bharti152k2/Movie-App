@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-async function getMovie(movieTitle) {
-  let apiKey = "630804c4";
-  let apiUrl = `https://www.omdbapi.com/?apiKey=${apiKey}&t=${movieTitle}`;
+async function getMovie(movietitle) {
+  let apikey = "630804c4";
+  let apiUrl = `https://www.omdbapi.com/?apiKey=${apikey}&t=${movietitle}`;
   try {
     let response = await fetch(apiUrl);
     console.log(response);
