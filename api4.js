@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 async function getMovie(movieTitle) {
   let apiKey = "630804c4";
-  let apiUrl = `http://www.omdbapi.com/?apiKey=${apiKey}&t=${movieTitle}`;
+  let apiUrl = `https://www.omdbapi.com/?apiKey=${apiKey}&t=${movieTitle}`;
   try {
     let response = await fetch(apiUrl);
     console.log(response);
